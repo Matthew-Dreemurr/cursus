@@ -27,7 +27,7 @@ jobs:
           name: PDFs
       - name: Test artifact download
         run: ls -R
-    createPullRequest:
+  createPullRequest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
