@@ -11,7 +11,9 @@ jobs:
         with:
           root_file: test.tex
       - run: ls -la
-      - uses: actions/upload-artifact@v3
+      - uses: actions/download-artifact@v3
         with:
-          name: my-artifact
-          path: test.pdf
+          name: test.pdf
+          
+      - name: Display structure of downloaded files
+        run: ls -R
