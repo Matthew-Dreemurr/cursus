@@ -19,5 +19,10 @@ jobs:
           glob_root_file: true
           
       - run: find *; find * ! -name '*.pdf' ! -name 'Makefile' ! -name '*.tex' -type f -exec rm -f {} \;
+      - run:  mkdir -p pdf
       - run: find *;find * -name '*.pdf' -type f -exec mv {} pdf/. \;
-      - run: find *;
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: PDFs
+          path: "*.pdf"
