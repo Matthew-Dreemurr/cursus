@@ -9,7 +9,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "*.tex"
+          root_file: "tex/*.tex"
           glob_root_file: true
       - run: ls -la
       - uses: actions/upload-artifact@v3
