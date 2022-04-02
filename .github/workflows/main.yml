@@ -16,5 +16,6 @@ jobs:
         with:
           name: PDFs
           path: "*.pdf"
+      - name: Show log
       - run: echo "\n\n==============================================\n\n\n"
       - run: cat *.log
