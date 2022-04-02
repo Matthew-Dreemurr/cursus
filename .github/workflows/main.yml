@@ -18,7 +18,6 @@ jobs:
           path: "*.pdf"
   show_log:
     runs-on: ubuntu-latest
-    steps:
       - name: Show log
       - run: echo "\n\n==============================================\n\n\n"
       - run: cat *.log
