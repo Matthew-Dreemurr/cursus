@@ -1,0 +1,111 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.3.1)  2 APR 2022 21:24
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Art.tex
+(./Art.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24>
+(/opt/texlive/texdir/texmf-dist/tex/latex/base/minimal.cls
+Document Class: minimal 2001/05/25 Standard LaTeX minimal class
+) (/opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count185
+\U@D=\dimen138
+\l@unhyphenated=\language87
+
+(/opt/texlive/texdir/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count186
+
+(/opt/texlive/texdir/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2021/07/20 v3.5m French support from the babel system
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language29). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language29). Reported on input line 92.
+\FB@nonchar=\count187
+Package babel Info: Making : an active character on input line 430.
+Package babel Info: Making ; an active character on input line 431.
+Package babel Info: Making ! an active character on input line 432.
+Package babel Info: Making ? an active character on input line 433.
+\FBguill@level=\count188
+\FBold@everypar=\toks16
+\FB@Mht=\dimen139
+\mc@charclass=\count189
+\mc@charfam=\count190
+\mc@charslot=\count191
+\std@mcc=\count192
+\dec@mcc=\count193
+\listindentFB=\dimen140
+\descindentFB=\dimen141
+\labelindentFB=\dimen142
+\labelwidthFB=\dimen143
+\leftmarginFB=\dimen144
+\parindentFFN=\dimen145
+\FBfnindent=\dimen146
+))
+(/opt/texlive/texdir/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/opt/texlive/texdir/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count194
+\l__pdf_internal_box=\box50
+)
+(./Art.aux)
+\openout1 = `Art.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Info: Redefining \degres on input line 4.
+LaTeX Info: Redefining \up on input line 4.
+
+
+Package french.ldf Warning: OT1 encoding should not be used for French.
+(french.ldf)                Add \usepackage[T1]{fontenc} to the preamble
+(french.ldf)                of your document; reported on input line 4.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+[1{/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./Art.aux) ) 
+Here is how much of TeX's memory you used:
+ 1980 strings out of 478276
+ 34786 string characters out of 5848501
+ 344619 words of memory out of 5000000
+ 20252 multiletter control sequences out of 15000+600000
+ 469567 words of font info for 29 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,5n,46p,132b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+</opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
+fb></opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/te
+xlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive/
+texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/texlive/texdir/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Art.pdf (1 page, 70104 bytes).
+PDF statistics:
+ 43 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
