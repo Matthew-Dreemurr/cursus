@@ -10,5 +10,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: test.tex
-      - name: test
-      - run: ls -la 
+      - run: ls -la
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: test.pdf
