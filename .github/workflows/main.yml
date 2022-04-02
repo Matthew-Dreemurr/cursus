@@ -16,8 +16,7 @@ jobs:
         with:
           name: PDFs
           path: "*.pdf"
-jobs:
-  build_latex:
+  show_log:
     runs-on: ubuntu-latest
     steps:
       - name: Show log
