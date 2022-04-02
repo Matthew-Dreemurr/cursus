@@ -29,27 +29,11 @@ jobs:
         run: ls -R
       - name: git commut data
         uses: rlespinasse/git-commit-data-action@v1
-      - name: author file
-        run: |
-          echo "commit info" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_SHA }}" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_SHORT_SHA }}" >> AUTHOR
-          echo "author info" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_AUTHOR }}" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_AUTHOR_NAME }}" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_AUTHOR_EMAIL }}" >> AUTHOR
-          echo "committer info" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_COMMITTER }}" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_COMMITTER_NAME }}" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_COMMITTER_EMAIL }}" >> AUTHOR
-          echo "message info" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_MESSAGE_SUBJECT }}" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_MESSAGE_SUBJECT_SANITIZED }}" >> AUTHOR
-          echo " - ${{ env.GIT_COMMIT_MESSAGE_BODY }}" >> AUTHOR
       - name: PR
         uses: peter-evans/create-pull-request@v3 
         with:
           branch: "pdf-update"
+          base: main
           title: "Update PDF"
           committer: ${{ env.GIT_COMMIT_AUTHOR }}
           author: ${{ env.GIT_COMMIT_AUTHOR }}
