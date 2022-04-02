@@ -20,8 +20,8 @@ jobs:
           name: PDFs
           path: "*.pdf"
           
-      - run: find * ! -name '*.pdf' ! -name 'Makefile' ! -name '*.tex' -type f -exec rm -f {} +
-      - run: find * -name '*.pdf' -type f -exec mv {} pdf/. +
+      - run: find * ! -name '*.pdf' ! -name 'Makefile' ! -name '*.tex' -type f -exec rm -f {} \;
+      - run: find * -name '*.pdf' -type f -exec mv {} pdf/. \;
       - name: git commut data
         uses: rlespinasse/git-commit-data-action@v1
 
