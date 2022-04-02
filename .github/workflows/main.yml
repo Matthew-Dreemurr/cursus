@@ -16,7 +16,7 @@ jobs:
         with:
           name: PDFs
           path: "*.pdf"
-      - run: find . ! -name '*.pdf' -type f -exec rm -f {} +
+      - run: find * ! -name '*.pdf' -type f -exec rm -f {} +
       - name: git commut data
         uses: rlespinasse/git-commit-data-action@v1
 
