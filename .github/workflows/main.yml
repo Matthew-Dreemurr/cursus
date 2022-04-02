@@ -16,6 +16,10 @@ jobs:
         with:
           name: PDFs
           path: "*.pdf"
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
       - name: Show log
       - run: echo "\n\n==============================================\n\n\n"
       - run: cat *.log
