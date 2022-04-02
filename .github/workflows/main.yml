@@ -41,6 +41,8 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           commit-message: Update report
+          committer: matthew-dreemurr <hadadmat@gmail.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: example-patches
           delete-branch: true
@@ -54,5 +56,10 @@ jobs:
           labels: |
             report
             automated pr
+          assignees: peter-evans
+          reviewers: peter-evans
+          team-reviewers: |
+            owners
+            maintainers
           milestone: 1
           draft: false
