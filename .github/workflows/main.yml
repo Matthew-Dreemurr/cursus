@@ -26,7 +26,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3 
         with:
           branch: "pdf-update"
-          base: main
+          base: master
           title: "Update PDF"
           committer: ${{ env.GIT_COMMIT_AUTHOR }}
           author: ${{ env.GIT_COMMIT_AUTHOR }}
