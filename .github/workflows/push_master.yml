@@ -10,9 +10,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
         
-      - run: find *
-      - run: find * -name '*.pdf' -type f -exec rm -f {} \;
-      - run: find *
+      - run: find *; find * -name '*.pdf' -type f -exec rm -f {} \; find * ;
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
@@ -20,12 +18,5 @@ jobs:
           root_file: "tex/*.tex"
           glob_root_file: true
           
-      - run: find *
-      
-      # - uses: actions/upload-artifact@v3
-        # with:
-          # name: PDFs
-          # path: "*.pdf"
-          
-      - run: find * ! -name '*.pdf' ! -name 'Makefile' ! -name '*.tex' -type f -exec rm -f {} \;
-      - run: find * -name '*.pdf' -type f -exec mv {} pdf/. \;
+      - run: find *; find * ! -name '*.pdf' ! -name 'Makefile' ! -name '*.tex' -type f -exec rm -f {} \; find *;
+      - run: find *; find * -name '*.pdf' -type f -exec mv {} pdf/. \; find *;
