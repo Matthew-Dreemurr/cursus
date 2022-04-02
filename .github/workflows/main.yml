@@ -1,5 +1,8 @@
 name: Build LaTeX document
-on: [push]
+on:
+  push:
+    branches:
+      - 'master'
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -22,19 +25,19 @@ jobs:
           
       - run: find * ! -name '*.pdf' ! -name 'Makefile' ! -name '*.tex' -type f -exec rm -f {} \;
       - run: find * -name '*.pdf' -type f -exec mv {} pdf/. \;
-      - name: git commut data
-        uses: rlespinasse/git-commit-data-action@v1
+      # - name: git commut data
+        # uses: rlespinasse/git-commit-data-action@v1
 
-      - name: test
-        run: echo "${{ env.GIT_COMMIT_AUTHOR }}"
+      # - name: test
+      #   run: echo "${{ env.GIT_COMMIT_AUTHOR }}"
 
-      - name: PR
-        uses: peter-evans/create-pull-request@v3 
-        with:
-          branch: ${{env.GIT_COMMIT_AUTHOR_NAME}}_${{env.GIT_COMMIT_SHORT_SHA}}
-          base: master
-          title: "Update PDF"
-          committer: ${{ env.GIT_COMMIT_AUTHOR }}
-          author: ${{ env.GIT_COMMIT_AUTHOR }}
-          token: ${{secrets.GITHUB_TOKEN}}
-          delete-branch: true
+      # - name: PR
+      #   uses: peter-evans/create-pull-request@v3 
+      #   with:
+      #     branch: ${{env.GIT_COMMIT_AUTHOR_NAME}}_${{env.GIT_COMMIT_SHORT_SHA}}
+      #     base: master
+      #     title: "Update PDF"
+      #     committer: ${{ env.GIT_COMMIT_AUTHOR }}
+      #     author: ${{ env.GIT_COMMIT_AUTHOR }}
+      #     token: ${{secrets.GITHUB_TOKEN}}
+      #     delete-branch: true
