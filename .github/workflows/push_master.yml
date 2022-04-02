@@ -10,7 +10,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
         
-      - run: find *; find * -name '*.pdf' -type f -exec rm -f {} \; find * ;
+      - run: find *; find * -name '*.pdf' -type f -exec rm -f {} \;; find * ;
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
