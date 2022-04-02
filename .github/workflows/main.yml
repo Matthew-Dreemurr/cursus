@@ -11,9 +11,3 @@ jobs:
         with:
           root_file: test.tex
       - run: ls -la
-      - uses: actions/download-artifact@v3
-        with:
-          name: test.pdf
-          
-      - name: Display structure of downloaded files
-        run: ls -R
