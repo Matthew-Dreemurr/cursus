@@ -29,7 +29,6 @@ jobs:
         run: ls -R
       - name: git commut data
         uses: rlespinasse/git-commit-data@v1.x
-      - name: Print git commit data
         run: |
           echo "commit info" >> AUTHOR
           echo " - ${{ env.GIT_COMMIT_SHA }}" >> AUTHOR
@@ -46,7 +45,6 @@ jobs:
           echo " - ${{ env.GIT_COMMIT_MESSAGE_SUBJECT }}" >> AUTHOR
           echo " - ${{ env.GIT_COMMIT_MESSAGE_SUBJECT_SANITIZED }}" >> AUTHOR
           echo " - ${{ env.GIT_COMMIT_MESSAGE_BODY }}" >> AUTHOR
-
       - name: PR
         users: peter-evans/create-pull-request@v3 
         with:
