@@ -10,13 +10,15 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
         
+      - run: find * -name '*.pdf' -type f -exec rm -f {} \;
+      
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
           root_file: "tex/*.tex"
           glob_root_file: true
           
-      - run: ls -la
+      - run: find *
       
       - uses: actions/upload-artifact@v3
         with:

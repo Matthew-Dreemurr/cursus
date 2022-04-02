@@ -12,3 +12,4 @@ jobs:
         with:
           root_file: "tex/*.tex"
           glob_root_file: true
+      - run: find *
