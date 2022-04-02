@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v3
-          with:
-            name: PDFs
+        with:
+          name: PDFs
       - name: Test artifact download
         run: ls -R
