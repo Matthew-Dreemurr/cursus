@@ -18,14 +18,11 @@ jobs:
           path: "*.pdf"
       - name: git commut data
         uses: rlespinasse/git-commit-data-action@v1
-
-      - name: Remove all !*.pdf
-        run: find . ! -name '*.pdf' -type f -exec rm -f {} +
-
       - name: PR
+        run: find . ! -name '*.pdf' -type f -exec rm -f {} +
         uses: peter-evans/create-pull-request@v3 
         with:
-          branch: ${{ env.GIT_COMMIT_SHORT_SHA }}
+          branch: ${{env.GIT_COMMIT_SHORT_SHA}} ${{env.GIT_COMMIT_AUTHOR_NAME}}
           base: master
           title: "Update PDF"
           committer: ${{ env.GIT_COMMIT_AUTHOR }}
