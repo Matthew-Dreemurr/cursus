@@ -11,3 +11,7 @@ jobs:
         with:
           root_file: test.tex
       - run: ls -la
+      - uses: actions/upload-artifact@v3
+        with:
+          name: PDFs
+          path: "*.pdf"
