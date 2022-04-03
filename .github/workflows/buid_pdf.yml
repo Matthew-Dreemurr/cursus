@@ -33,8 +33,8 @@ jobs:
 
       - name: git commut data
         uses: rlespinasse/git-commit-data-action@v1
-
-      - run: git status 
-      - run: git add -A
-      - run: git commit -m ${{GIT_COMMIT_SHORT_SHA}}_BUILD
-      - run: git push
+      - name: Push
+        run: git status 
+        run: git add -A
+        run: git commit -m ${{GIT_COMMIT_SHORT_SHA}}_BUILD
+        run: git push
