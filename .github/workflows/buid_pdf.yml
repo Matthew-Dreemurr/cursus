@@ -34,8 +34,7 @@ jobs:
       - name: git commut data
         uses: rlespinasse/git-commit-data-action@v1
 
-      - name: Id github
-        run: git config --global user.email ${{env.GIT_COMMIT_AUTHOR_EMAIL}}
-        run: git config --global user.name ${{env.GIT_COMMIT_AUTHOR_NAME}}
+      - run: git config --global user.email ${{env.GIT_COMMIT_AUTHOR_EMAIL}}
+      - run: git config --global user.name ${{env.GIT_COMMIT_AUTHOR_NAME}}
       - name: Push
         run: git status && git add -A && git commit -m "${{env.GIT_COMMIT_SHORT_SHA}}_BUILD" && git push
