@@ -35,4 +35,4 @@ jobs:
         uses: rlespinasse/git-commit-data-action@v1
 
       - name: Push
-        run: git status && git add -A && git commit -m ${{GIT_COMMIT_SHORT_SHA}}_BUILD && git push
+        run: git status && git add -A && git commit -m "${{GIT_COMMIT_SHORT_SHA}}_BUILD" && git push
